@@ -2,7 +2,7 @@
 title: Main Page
 description: Welcome to Chroma Framework!
 published: true
-date: 2021-09-04T05:54:48.064Z
+date: 2021-09-04T22:34:48.697Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-03T13:00:31.358Z
@@ -79,7 +79,7 @@ It almost scratched the author's itch, but it was not intuitive enough. There is
 While other libraries certainly have their own strengths and advantages - for example MonoGame and Ultraviolet support mobile platforms, 3D capabilities are a first-class feature, all of them also have their own thriving communities, there is one weakness connecting them all. *They are a hassle to set up and maintain.*
 
 ## Supported platforms
-Right now Chroma supports Linux, Windows and macOS. Mobile platform support is hesitantly considered, but not being worked on yet. If you need these *right now*, then it may be better for you to look into one of the frameworks listed above.
+Right now Chroma supports Linux, Windows and macOS. 32-bit processors are not supported. Mobile platform support is hesitantly considered, but not being worked on yet. If you need these *right now*, then it may be better for you to look into one of the frameworks listed above.
 
 ## Requirements
 All Chroma needs is a working .NET 5 (or newer) installation. Once you got that working you can get to the next section.
