@@ -2,7 +2,7 @@
 title: Game
 description: Demystifying the heart of your project
 published: true
-date: 2021-09-04T23:25:34.140Z
+date: 2021-09-04T23:32:38.630Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-04T23:25:34.140Z
@@ -38,7 +38,7 @@ This property facilitates easy asset loading. It allows you to load, unload, tra
 There are a few other properties you can use to control some of the framework's inner workings, some of them are not as easy to understand as the rest of the framework.
 
 - **[FixedTimeStepTarget](https://chroma-2d.github.io/apiref/classChroma_1_1Game.html#ada713104d136386753bf34e33402c85e)**
-This property controls the frequency at which the [FixedUpdate](https://chroma-2d.github.io/apiref/classChroma_1_1Game.html#a9e901c57b9e45dd2711582fb484c517a) callback will be called. It unit is best described with "call it that many times every second". The default is 75.
+This property controls the frequency at which the [FixedUpdate](https://chroma-2d.github.io/apiref/classChroma_1_1Game.html#a9e901c57b9e45dd2711582fb484c517a) callback will be called. Its unit is best described with "call it that many times every second". The default is 75.
 
 - **[StartupOptions](https://chroma-2d.github.io/apiref/classChroma_1_1Game.html#af6210531229f341a150111cb8ab3fcbb)**
 This property allows you to access the pre-initialization settings that were passed to the base class constructor. They are read-only and can only be set at the time of instantiation of your game's core class.
