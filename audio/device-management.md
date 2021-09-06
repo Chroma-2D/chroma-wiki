@@ -2,7 +2,7 @@
 title: Device Management
 description: Let the sound be heard through a device of your own choosing
 published: false
-date: 2021-09-06T16:28:16.681Z
+date: 2021-09-06T16:42:01.868Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-06T15:36:34.513Z
@@ -18,3 +18,7 @@ The audio sub-system in Chroma allows you to interface with many of the audio de
 ```CSharp
 using Chroma.Audio;
 ```
+
+### Device events
+You can monitor for audio device (dis-)connection using the events provided by the available [AudioManager](https://chroma-2d.github.io/apiref/classChroma_1_1Audio_1_1AudioManager.html) instance.
+
