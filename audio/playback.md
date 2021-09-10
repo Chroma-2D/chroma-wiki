@@ -2,7 +2,7 @@
 title: Playback
 description: Practical examples on how to play audio using Chroma
 published: true
-date: 2021-09-04T04:15:47.624Z
+date: 2021-09-10T05:37:33.473Z
 tags: sound
 editor: markdown
 dateCreated: 2021-09-03T13:15:07.149Z
@@ -29,7 +29,7 @@ using Chroma.Audio.Sources;
 ## Examples
 Examples assume the code is inside a class deriving from the [Game](https://chroma-2d.github.io/apiref/classChroma_1_1Game.html) base class.
 
-### Loading a sound from file and playing it
+### Loading a sound from file
 
 You can load a sound by directly invoking the constructor of the [Sound](https://chroma-2d.github.io/apiref/classChroma_1_1Audio_1_1Sources_1_1Sound.html) class, or by using an [IContentProvider](https://chroma-2d.github.io/apiref/interfaceChroma_1_1ContentManagement_1_1IContentProvider.html) implementation, provided it supports the Sound type.
 
