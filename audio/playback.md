@@ -2,7 +2,7 @@
 title: Playback
 description: Practical examples on how to play audio using Chroma
 published: true
-date: 2021-09-10T05:44:46.991Z
+date: 2021-09-10T05:46:42.109Z
 tags: sound
 editor: markdown
 dateCreated: 2021-09-03T13:15:07.149Z
@@ -122,7 +122,7 @@ public static class FileBasedAudioSourceExtensions
 
 ### Getting rid of an audio source
 If you don't need an audio source object taking up resources anymore, there are two ways to go about freeing it:
- - Using the [DisposableResource](https://chroma-2d.github.io/apiref/classChroma_1_1MemoryManagement_1_1DisposableResource.html) system. 
-This works whether or not you loaded your audio resource with an [IContentProvider](https://chroma-2d.github.io/apiref/interfaceChroma_1_1ContentManagement_1_1IContentProvider.html)
+ - Using the [DisposableResource](https://chroma-2d.github.io/apiref/classChroma_1_1MemoryManagement_1_1DisposableResource.html) 
+This works whether or not you loaded your audio source with an [IContentProvider](https://chroma-2d.github.io/apiref/interfaceChroma_1_1ContentManagement_1_1IContentProvider.html)
  - Using the [IContentProvider.Unload\<T\>](https://chroma-2d.github.io/apiref/interfaceChroma_1_1ContentManagement_1_1IContentProvider.html#a1b2a90f865eef0b6657315d3d5755f09)
- This only works if you loaded your audio resource using a content provider or told your content provider to track the manually created resource.
+ This only works if you loaded your audio source using a content provider or told your content provider to track the manually created resource.
