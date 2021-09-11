@@ -2,7 +2,7 @@
 title: Contribution Guidelines
 description: Helping you helps us help you help us all
 published: true
-date: 2021-09-11T04:27:36.788Z
+date: 2021-09-11T04:41:02.754Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-04T21:19:26.255Z
@@ -79,6 +79,9 @@ Use it to describe facts about features that make the user's life easier, but do
 # Contributing to Chroma
 Anyone can clone, modify the clone, and then send a pull request to the upstream repository. If your modifications fail to meet the following guidelines, the core development team will point out what is wrong and might ask you to (re-)visit this page, so it's worth to pay attention to this section.
 
+## Indentation
+4 spaces. Tabs are forbidden.
+
 ## General layout
 Chroma is a monolithic system at its heart. This means every core module goes into the [Chroma](https://github.com/Chroma-2D/Chroma/tree/master/Chroma) sub-project. [Chroma.Natives](https://github.com/Chroma-2D/Chroma/tree/master/Chroma.Natives) is a dependency that's bootstrapped when Chroma first loads into memory. [Chroma.STB](https://github.com/Chroma-2D/Chroma/tree/master/Chroma.STB) contains C# ports of the popular `stb` single-header C library collection.
 
@@ -99,15 +102,71 @@ The middle of a class consists solely of constructors. They are ordered from the
 The bottom of a class consists exclusively of methods, Contrary to the previous sections, methods are ordered from the most accessible on top, to the least accessible on bottom. Instance methods take precendence over static methods.
 
 ### Nested classes
-Ideally do not nest classes. If seriously needed, they should go at the absolute bottom of the parent class.
+Ideally do not nest classes. If seriously needed, they must go at the absolute bottom of the parent class.
 
 ## Naming
-This section contains examples only.
-### Private & protected fields
+### Fields
+>Do not define public fields unless absolutely necessary. Fields are considered implementation details. Use properties instead.
+{.is-danger}
+#### Private & protected fields
 ```CSharp
 private string _myString;
+
 protected int _myProtectedInt;
 ```
-### Internal & public fields
+#### Internal & internal protected fields
 ```CSharp
-internal string MyString
+internal string MyString;
+
+internal protected string MyInternalProtectedString;
+```
+
+### Properties
+All properties must use PascalCase regardless of their accessibility.
+```CSharp
+private int MyIntProperty { get; protected set; }
+
+internal string MyStringProperty { get; set; }
+
+public bool MyBoolProperty => false;
+```
+
+### Delegates
+All delegates must use PascalCase regardless of their accessibility and must have `Delegate` postfix appended.
+```CSharp
+private delegate void DoStuffNoReturnDelegate(string aParam, bParam);
+
+protected delegate int DoStuffIntDelegate(bool someParameter);
+
+public delegate bool CheckStuffDelegate();
+```
+
+### Methods
+All methods must use PascalCase regardless of their accessibility. Single-statement methods should be [expression-bodied](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members).
+```CSharp
+public void DoStuff()
+  => SingleStatement();
+  
+internal void DoStuffInternal()
+{
+  // ...
+}
+
+internal protected void DoStuffNobodyElseDoes()
+{
+  // ...
+}
+  
+protected void ProcessThings(IEnumerable<string> things)
+{
+  // ...
+}
+
+private void PrivatelyDoStuff()
+{
+  // ...
+}
+```
+
+### Method parameters
+All method parameters must use `lowerCamelCase`.
