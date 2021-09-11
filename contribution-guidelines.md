@@ -2,7 +2,7 @@
 title: Contribution Guidelines
 description: Helping you helps us help you help us all
 published: true
-date: 2021-09-11T05:15:21.371Z
+date: 2021-09-11T05:15:36.896Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-04T21:19:26.255Z
@@ -86,7 +86,7 @@ Anyone can clone, modify the clone, and then send a pull request to the upstream
 Chroma is a monolithic system at its heart. This means every core module goes into the [Chroma](https://github.com/Chroma-2D/Chroma/tree/master/Chroma) sub-project. [Chroma.Natives](https://github.com/Chroma-2D/Chroma/tree/master/Chroma.Natives) is a dependency that's bootstrapped when Chroma first loads into memory. [Chroma.STB](https://github.com/Chroma-2D/Chroma/tree/master/Chroma.STB) contains C# ports of the popular `stb` single-header C library collection.
 
 ## Code layout
-A class, struct, enum, record or an interface should have their own file. There is one exception to this rule and it only applies to private enumerations. This is explained in detail in the *Nested enumerations* section.
+A class, struct, enum, record or an interface should each have its own file. There is one exception to this rule and it only applies to private enumerations. This is explained in detail in the *Nested enumerations* section.
 
 ### The informational top
 The top of a class consists of and follows the logical order of the following list:
