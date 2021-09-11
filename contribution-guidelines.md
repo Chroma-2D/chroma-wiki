@@ -2,7 +2,7 @@
 title: Contribution Guidelines
 description: Helping you helps us help you help us all
 published: true
-date: 2021-09-11T05:06:08.857Z
+date: 2021-09-11T05:06:18.415Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-04T21:19:26.255Z
@@ -125,7 +125,7 @@ Internal, protected internal and public fields must use PascalCase.
 ```CSharp
 internal string MyString;
 
-internal protected string MyInternalProtectedString;
+protected internal string MyInternalProtectedString;
 
 // Bad. Don't do it. I will yell at you. 
 //  ~ vddcore
