@@ -2,7 +2,7 @@
 title: Contribution Guidelines
 description: Helping you helps us help you help us all
 published: true
-date: 2021-09-11T04:49:14.765Z
+date: 2021-09-11T05:05:25.726Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-04T21:19:26.255Z
@@ -86,7 +86,9 @@ Anyone can clone, modify the clone, and then send a pull request to the upstream
 Chroma is a monolithic system at its heart. This means every core module goes into the [Chroma](https://github.com/Chroma-2D/Chroma/tree/master/Chroma) sub-project. [Chroma.Natives](https://github.com/Chroma-2D/Chroma/tree/master/Chroma.Natives) is a dependency that's bootstrapped when Chroma first loads into memory. [Chroma.STB](https://github.com/Chroma-2D/Chroma/tree/master/Chroma.STB) contains C# ports of the popular `stb` single-header C library collection.
 
 ## Code layout
-### The informational "top of the class"
+A class, struct, enum or record should have their own file. There is one exception to this rule and it only applies to private enumerations. This is explained in detail in the *Nested enumerations* section.
+
+### The informational top
 The top of a class consists of and follows the logical order of the following list:
 1. Fields
 2. Delegates
@@ -95,28 +97,31 @@ The top of a class consists of and follows the logical order of the following li
 
 These should be ordered from the least accessible on top to the most accessible on bottom. See [Window](https://github.com/Chroma-2D/Chroma/blob/master/Chroma/Windowing/Window.cs) class for a good example of this rule.
 
-### The constructional "middle of the class"
+### The constructional middle
 The middle of a class consists solely of constructors. They are ordered from the least accessible on top, to the most accessible on bottom of the section.
 
-### The functional "bottom"
+### The functional bottom
 The bottom of a class consists exclusively of methods, Contrary to the previous sections, methods are ordered from the most accessible on top, to the least accessible on bottom. Instance methods take precendence over static methods.
 
 ### Nested classes
-Ideally do not nest classes. If seriously needed, they must go at the absolute bottom of the parent class.
+Ideally *do not* nest classes. If absolutely necessary, they must be private and go at the absolute bottom of the parent class.
+
+### Nested enumerations
+Same as above, but if absolutely need and defined inside a class, they must be private and go above field declarations.
 
 ## Naming
 ### Fields
 >Do not define public fields unless absolutely necessary. Fields are considered implementation details. If you need your class to expose data, use properties instead.
 {.is-danger}
 #### Private & protected fields
-Private fields must use `lowerCamelCase` and must have a single underscore `_` prepended to their names.
+Private and protected fields must use `lowerCamelCase` and must have a single underscore `_` prepended to their names.
 ```CSharp
 private string _myString;
 
 protected int _myProtectedInt;
 ```
 #### Internal, internal protected & public fields
-Internal, internal protected  and public fields must use PascalCase.
+Internal, internal protected and public fields must use PascalCase.
 ```CSharp
 internal string MyString;
 
