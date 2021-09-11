@@ -2,7 +2,7 @@
 title: Contribution Guidelines
 description: Helping you helps us help you help us all
 published: true
-date: 2021-09-11T04:41:02.754Z
+date: 2021-09-11T04:44:42.624Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-04T21:19:26.255Z
@@ -109,16 +109,22 @@ Ideally do not nest classes. If seriously needed, they must go at the absolute b
 >Do not define public fields unless absolutely necessary. Fields are considered implementation details. Use properties instead.
 {.is-danger}
 #### Private & protected fields
+Private fields must use `lowerCamelCase` and must have a single underscore `_` prepended to their names.
 ```CSharp
 private string _myString;
 
 protected int _myProtectedInt;
 ```
-#### Internal & internal protected fields
+#### Internal, internal protected & public fields
+Internal & internal protected fields must use PascalCase.
 ```CSharp
 internal string MyString;
 
 internal protected string MyInternalProtectedString;
+
+// Bad. Don't do it. I will yell at you. 
+//  ~ vddcore
+public int MyPublicField;
 ```
 
 ### Properties
