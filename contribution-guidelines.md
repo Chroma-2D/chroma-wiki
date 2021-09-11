@@ -2,7 +2,7 @@
 title: Contribution Guidelines
 description: Helping you helps us help you help us all
 published: true
-date: 2021-09-11T05:21:32.950Z
+date: 2021-09-11T05:25:10.378Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-04T21:19:26.255Z
@@ -142,7 +142,7 @@ public int MyPublicField;
 ### Properties
 All properties must use PascalCase regardless of their accessibility.
 ```CSharp
-private int MyIntProperty { get; protected set; }
+private int MyIntProperty { get; set; }
 
 internal string MyStringProperty { get; set; }
 
