@@ -2,7 +2,7 @@
 title: Contribution Guidelines
 description: Helping you helps us help you help us all
 published: true
-date: 2021-09-04T21:54:47.246Z
+date: 2021-09-11T04:27:36.788Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-04T21:19:26.255Z
@@ -14,7 +14,7 @@ dateCreated: 2021-09-04T21:19:26.255Z
 >The guidelines are a work-in-progress and might be changed if a situation requires it. Make sure to check these frequently - no effort will be made to notify you when the modifications to this pages are made.
 {.is-warning}
 
-## Contributing to this Wiki
+# Contributing to this Wiki
 Only trusted people can edit and publish changes to this Wiki. Everyone else has read-only access. Feel free to [contact me on telegram](https://telegram.me/ciastex8086) if you are interested in contributing to this documentation effort.
 
 ### Glossary
@@ -75,3 +75,39 @@ Used it to describe a warning which failure to take note of might lead to hard-t
 
 - `{.is-info}`
 Use it to describe facts about features that make the user's life easier, but don't qualify as any of the above.
+
+# Contributing to Chroma
+Anyone can clone, modify the clone, and then send a pull request to the upstream repository. If your modifications fail to meet the following guidelines, the core development team will point out what is wrong and might ask you to (re-)visit this page, so it's worth to pay attention to this section.
+
+## General layout
+Chroma is a monolithic system at its heart. This means every core module goes into the [Chroma](https://github.com/Chroma-2D/Chroma/tree/master/Chroma) sub-project. [Chroma.Natives](https://github.com/Chroma-2D/Chroma/tree/master/Chroma.Natives) is a dependency that's bootstrapped when Chroma first loads into memory. [Chroma.STB](https://github.com/Chroma-2D/Chroma/tree/master/Chroma.STB) contains C# ports of the popular `stb` single-header C library collection.
+
+## Code layout
+### The informational "top of the class"
+The top of a class consists of and follows the logical order of the following list:
+1. Fields
+2. Delegates
+3. Properties
+4. Events
+
+These should be ordered from the least accessible on top to the most accessible on bottom. See [Window](https://github.com/Chroma-2D/Chroma/blob/master/Chroma/Windowing/Window.cs) class for a good example of this rule.
+
+### The constructional "middle of the class"
+The middle of a class consists solely of constructors. They are ordered from the least accessible on top, to the most accessible on bottom of the section.
+
+### The functional "bottom"
+The bottom of a class consists exclusively of methods, Contrary to the previous sections, methods are ordered from the most accessible on top, to the least accessible on bottom. Instance methods take precendence over static methods.
+
+### Nested classes
+Ideally do not nest classes. If seriously needed, they should go at the absolute bottom of the parent class.
+
+## Naming
+This section contains examples only.
+### Private & protected fields
+```CSharp
+private string _myString;
+protected int _myProtectedInt;
+```
+### Internal & public fields
+```CSharp
+internal string MyString
