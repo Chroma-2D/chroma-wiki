@@ -2,7 +2,7 @@
 title: Contribution Guidelines
 description: Helping you helps us help you help us all
 published: true
-date: 2021-09-11T05:20:52.002Z
+date: 2021-09-11T05:21:32.950Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-04T21:19:26.255Z
@@ -191,7 +191,7 @@ All method parameters must use `lowerCamelCase`.
 
 #### Local method variables
 All local method variables must use `lowerCamelCase`. Prefer `var` over explicit type declaration if your type doesn't break default expectations. Default expectation and violation of it is described with the following example:
-```
+```CSharp
 var num = 0;
 // Usually we use ints to store numbers when using C# and you kinda don't think about it twice when you see it.
 
