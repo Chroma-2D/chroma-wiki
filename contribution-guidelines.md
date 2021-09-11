@@ -2,7 +2,7 @@
 title: Contribution Guidelines
 description: Helping you helps us help you help us all
 published: true
-date: 2021-09-11T05:16:58.201Z
+date: 2021-09-11T05:20:52.002Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-04T21:19:26.255Z
@@ -103,7 +103,7 @@ These should be ordered from the least accessible on top to the most accessible 
 The middle of a class consists solely of constructors. They are ordered from the least accessible on top, to the most accessible on bottom of the section.
 
 ### The functional bottom
-The bottom of a class consists exclusively of methods, Contrary to the previous sections, methods are ordered from the most accessible on top, to the least accessible on bottom. Instance methods take precendence over static methods.
+The bottom of a class consists exclusively of methods, Contrary to the previous sections, methods are ordered from the most accessible on top, to the least accessible on bottom. Instance methods take precendence over static methods. Directly accessible methods take precedence over operators. See [Color](https://github.com/Chroma-2D/Chroma/blob/master/Chroma/Graphics/Color.cs#L291) class implementation for details.
 
 ### Nested classes
 Ideally *do not* nest classes. If absolutely necessary, they must be private and go at the absolute bottom of the parent class.
