@@ -2,7 +2,7 @@
 title: Contribution Guidelines
 description: Helping you helps us help you help us all
 published: true
-date: 2021-09-11T05:15:36.896Z
+date: 2021-09-11T05:16:58.201Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-04T21:19:26.255Z
@@ -93,8 +93,9 @@ The top of a class consists of and follows the logical order of the following li
 1. Constants
 2. Fields
 3. Delegates
-4. Properties
-5. Events
+4. Indexers
+5. Properties
+6. Events
 
 These should be ordered from the least accessible on top to the most accessible on bottom. See [Window](https://github.com/Chroma-2D/Chroma/blob/master/Chroma/Windowing/Window.cs) class for a good example of this rule.
 
