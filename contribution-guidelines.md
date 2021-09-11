@@ -2,7 +2,7 @@
 title: Contribution Guidelines
 description: Helping you helps us help you help us all
 published: true
-date: 2021-09-11T04:48:20.926Z
+date: 2021-09-11T04:49:14.765Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-04T21:19:26.255Z
@@ -147,8 +147,8 @@ protected delegate int DoStuffIntDelegate(bool someParameter);
 public delegate bool CheckStuffDelegate();
 ```
 
-### Methods
-All methods must use PascalCase regardless of their accessibility. Single-statement methods should be [expression-bodied](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members).
+### Constructors & methods
+All constructors and methods must use PascalCase regardless of their accessibility. Single-statement methods should be [expression-bodied](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members).
 ```CSharp
 public void DoStuff()
   => SingleStatement();
