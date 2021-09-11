@@ -2,7 +2,7 @@
 title: Contribution Guidelines
 description: Helping you helps us help you help us all
 published: true
-date: 2021-09-11T04:44:42.624Z
+date: 2021-09-11T04:48:20.926Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-04T21:19:26.255Z
@@ -106,7 +106,7 @@ Ideally do not nest classes. If seriously needed, they must go at the absolute b
 
 ## Naming
 ### Fields
->Do not define public fields unless absolutely necessary. Fields are considered implementation details. Use properties instead.
+>Do not define public fields unless absolutely necessary. Fields are considered implementation details. If you need your class to expose data, use properties instead.
 {.is-danger}
 #### Private & protected fields
 Private fields must use `lowerCamelCase` and must have a single underscore `_` prepended to their names.
@@ -116,7 +116,7 @@ private string _myString;
 protected int _myProtectedInt;
 ```
 #### Internal, internal protected & public fields
-Internal & internal protected fields must use PascalCase.
+Internal, internal protected  and public fields must use PascalCase.
 ```CSharp
 internal string MyString;
 
@@ -174,5 +174,8 @@ private void PrivatelyDoStuff()
 }
 ```
 
-### Method parameters
+#### Method parameters
 All method parameters must use `lowerCamelCase`.
+
+#### Local method variables
+All local method variables must use `lowerCamelCase`. Prefer `var` over explicit type declaration.
