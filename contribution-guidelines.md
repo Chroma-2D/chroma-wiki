@@ -2,7 +2,7 @@
 title: Contribution Guidelines
 description: Helping you helps us help you help us all
 published: true
-date: 2021-09-11T05:05:25.726Z
+date: 2021-09-11T05:06:08.857Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-04T21:19:26.255Z
@@ -120,8 +120,8 @@ private string _myString;
 
 protected int _myProtectedInt;
 ```
-#### Internal, internal protected & public fields
-Internal, internal protected and public fields must use PascalCase.
+#### Internal, protected internal & public fields
+Internal, protected internal and public fields must use PascalCase.
 ```CSharp
 internal string MyString;
 
