@@ -2,7 +2,7 @@
 title: Main Page
 description: Welcome to Chroma Framework!
 published: true
-date: 2021-09-04T22:34:48.697Z
+date: 2021-12-26T14:01:54.294Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-03T13:00:31.358Z
@@ -88,7 +88,7 @@ All Chroma needs is a working .NET 5 (or newer) installation. Once you got that 
 The library is available for download from the [NuGet package gallery](https://www.nuget.org/packages/Chroma/).
 
 In order to add a package to an existing project, run:
-`dotnet add package Chroma --version 0.49.1`
+`dotnet add package Chroma --version 0.52.0`
 
 ## API reference
 API reference is generated automatically and is available at [https://chroma-2d.github.io/apiref](https://chroma-2d.github.io/apiref).
