@@ -2,7 +2,7 @@
 title: Main Page
 description: Welcome to Chroma Framework!
 published: true
-date: 2021-12-26T14:01:54.294Z
+date: 2022-03-23T18:13:27.042Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-03T13:00:31.358Z
@@ -82,13 +82,13 @@ While other libraries certainly have their own strengths and advantages - for ex
 Right now Chroma supports Linux, Windows and macOS. 32-bit processors are not supported. Mobile platform support is hesitantly considered, but not being worked on yet. If you need these *right now*, then it may be better for you to look into one of the frameworks listed above.
 
 ## Requirements
-All Chroma needs is a working .NET 5 (or newer) installation. Once you got that working you can get to the next section.
+All Chroma needs is a working .NET 6 (or newer) installation. Once you got that working you can get to the next section.
 
 ## Acquiring the library
 The library is available for download from the [NuGet package gallery](https://www.nuget.org/packages/Chroma/).
 
 In order to add a package to an existing project, run:
-`dotnet add package Chroma --version 0.52.0`
+`dotnet add package Chroma --version 0.53.0`
 
 ## API reference
 API reference is generated automatically and is available at [https://chroma-2d.github.io/apiref](https://chroma-2d.github.io/apiref).
