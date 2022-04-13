@@ -2,17 +2,14 @@
 title: Game
 description: Demystifying the heart of your project
 published: true
-date: 2021-09-04T23:32:38.630Z
+date: 2022-04-13T18:19:36.435Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-04T23:25:34.140Z
 ---
 
-## Namespaces
-[Chroma](https://chroma-2d.github.io/apiref/namespaceChroma.html)
-
 ## Introduction
-The [Game](https://chroma-2d.github.io/apiref/classChroma_1_1Game.html) base class is the first thing you will see when starting a project utilizing Chroma. It serves as a focal point for all of your state processing, drawing logic, input processing, window operations, and more.
+The [Game](https://chroma-2d.github.io/index.html#File:Game.cs) base class is the first thing you will see when starting a project utilizing Chroma. It serves as a focal point for all of your state processing, drawing logic, input processing, window operations, and more.
 
 ### Imports
 ```CSharp
@@ -22,10 +19,10 @@ using Chroma;
 ### Basic sub-systems
 Chroma provides a set of properties allowing you to interact with all of the provided sub-systems.
 
-- **[Window](https://chroma-2d.github.io/apiref/classChroma_1_1Windowing_1_1Window.html)**
+- **[Window](https://chroma-2d.github.io/index.html#File:Windowing/Window.cs)**
 This property allows you to access the window acting as a viewport for your game. You can use it to go fullscreen, ask for user's attention by flashing a window, and many more. You are encouraged to visit [this wiki page](/windowing) for details and examples of using the windowing sub-system.
 
-- **[Graphics](https://chroma-2d.github.io/apiref/classChroma_1_1Graphics_1_1GraphicsManager.html)**
+- **[Graphics](https://chroma-2d.github.io/index.html#File:Graphics/GraphicsManager.cs)**
 This property allows you to access and process various details about the graphics adapter, current vertical synchronization mode, available OpenGL extensions and - perhaps most importantly - retrieve available monitors and their supported modes. See more on [this wiki page](/graphics/graphics-manager).
 
 - **[Audio](https://chroma-2d.github.io/apiref/namespaceChroma_1_1Audio.html)**
