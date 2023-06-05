@@ -2,7 +2,7 @@
 title: Main Page
 description: Welcome to Chroma Framework!
 published: true
-date: 2022-03-23T18:13:27.042Z
+date: 2023-06-05T13:23:25.690Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-03T13:00:31.358Z
@@ -35,7 +35,7 @@ namespace MyGame
 {
 	public class GameCore : Game
   {
-  	public Game() 
+  	public GameCore() 
     	: base(new(false, false))
     {
     }
@@ -88,10 +88,10 @@ All Chroma needs is a working .NET 6 (or newer) installation. Once you got that 
 The library is available for download from the [NuGet package gallery](https://www.nuget.org/packages/Chroma/).
 
 In order to add a package to an existing project, run:
-`dotnet add package Chroma --version 0.53.0`
+`dotnet add package Chroma --version 0.57.1`
 
 ## API reference
-API reference is generated automatically and is available at [https://chroma-2d.github.io/apiref](https://chroma-2d.github.io/apiref).
+API reference is generated automatically and is available at [https://chroma-2d.github.io](https://chroma-2d.github.io).
 
 ## I found a bug
 Wow, paint me surprised! You are most welcome to [publish a Github issue!](https://github.com/Chroma-2D/Chroma/issues)
@@ -99,13 +99,4 @@ Wow, paint me surprised! You are most welcome to [publish a Github issue!](https
 ## I want to help
 It would be great to have you on board! Fork Chroma, make your changes and - when you are done - submit a pull request. Then we can talk what can be done about it.  
 
-If you would like to contribute to this documentation effort, [shoot me a message.](https://telegram.me/ciastex8086) I certainly could use some help writing and then maintaining all of this.
-  
-Not a programmer yourself? Then I can only wonder how did you end down here. However, if you still desperately want to help and got extra money to spare, you can support the project via PayPal.
-<center>
-<form action="https://www.paypal.com/donate" method="post" target="_top">
-<input type="hidden" name="hosted_button_id" value="VXRNGVAKJT36J" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_PL/i/scr/pixel.gif" width="1" height="1" />
-</form>
-</center>
+If you would like to contribute to this documentation effort, [shoot me a message.](https://t.me/vddcore) I certainly could use some help writing and then maintaining all of this.
